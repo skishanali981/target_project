@@ -1,0 +1,185 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: corona definition
+  steps:
+  - intent: corona_intro
+  - action: utter_corona_intro
+
+- story: how corona spread
+  steps:
+  - intent: corona_spread
+  - action: utter_corona_spread
+
+- story: corona food spread
+  steps:
+  - intent: corona_food_spread
+  - action: utter_corona_food_spread
+
+- story: warm weather and corona
+  steps:
+  - intent: warm_weather
+  - action: utter_warm_weather
+
+- story: risk factors of corona
+  steps:
+  - intent: high_risk
+  - action: utter_high_risk
+
+- story: symptoms of corona
+  steps:
+  - intent: corona_symptoms
+  - action: utter_corona_symptoms
+
+- story: corona helpline
+  steps:
+  - intent: helpline_numbers
+  - action: utter_helpline_numbers
+
+- story: variants of corona
+  steps:
+  - intent: corona_variants
+  - action: utter_corona_variants
+
+- story: alpha variant of corona
+  steps:
+  - intent: alpha_variant
+  - action: utter_alpha_variant
+
+- story: beta variant of corona
+  steps:
+  - intent: beta_variant
+  - action: utter_beta_variant
+
+- story: gamma variant of corona
+  steps:
+  - intent: gamma_variant
+  - action: utter_gamma_variant
+
+- story: delta variant of corona
+  steps:
+  - intent: delta_variant
+  - action: utter_delta_variant
+
+- story: vaccines in market
+  steps:
+  - intent: vaccines
+  - action: utter_vaccines
+
+- story: covishield vaccine
+  steps:
+  - intent: covishield
+  - action: utter_covishield
+
+- story: covaxin vaccine
+  steps:
+  - intent: covaxin
+  - action: utter_covaxin
+
+- story: pfizer vaccine
+  steps:
+  - intent: pfizer
+  - action: utter_pfizer
+
+- story: moderna vaccine
+  steps:
+  - intent: moderna
+  - action: utter_moderna
+
+- story: sputnik vaccine
+  steps:
+  - intent: sputnik
+  - action: utter_sputnik
+
+- story: sinovac vaccine
+  steps:
+  - intent: sinovac
+  - action: utter_sinovac
+
+- story: vital parameters to be maintained
+  steps:
+  - intent: vital_parameters
+  - action: utter_vital_parameters
+
+- story: how to increase oxygen level
+  steps:
+  - intent: increase_oxygen_level
+  - action: utter_increase_oxygen_level
+
+- story: post covid case
+  steps:
+  - intent: post_covid
+  - action: utter_post_covid
+
+- story: third wave details
+  steps:
+  - intent: third_wave
+  - action: utter_third_wave
+
+- story: ppe_kit
+  steps:
+  - intent: ppe_kit
+  - action: utter_ppe_kit
+
+- story: vaccine instruction
+  steps:
+  - intent: vaccine_protocol
+  - action: utter_vaccine_protocol
+
+- story: probiotics
+  steps:
+  - intent: probiotics
+  - action: utter_probiotics
+
+- story: precautions to take
+  steps:
+  - intent: precautions
+  - action: utter_precautions
+
+- story: get_tested
+  steps:
+  - intent: get_tested
+  - action: utter_get_tested
+
+- story: treatment
+  steps:
+  - intent: treatment
+  - action: utter_treatment
+
+- story: what is covid19
+  steps:
+  - intent: covid_19
+  - action: utter_covid_19
+
+- story: corona tracker path
+  steps:
+  - intent: corona_states_stat
+  - action: actions_corona_state_stat

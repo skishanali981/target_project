@@ -1,0 +1,464 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: covid_19
+  examples: |
+    - what is covid
+    - what is covid-19
+    - can you tell me about covid
+    - tell me about covid19
+    - sars cov19
+    - when first case of covid ocurred
+    - time of covid occurance
+
+- intent: get_tested
+  examples: |
+    - when one should get tested for covid
+    - tested for corona
+    - when one should get tested for corona
+    - when to test corona
+    - when to test for covid19
+    - time for getting tested for covid19 coronavirus
+    - what should i do if i have covid19 symptoms
+
+- intent: treatment
+  examples: |
+    - how to get treatment for corona
+    - is there any treatment for corona
+    - is there any treatment for covid19
+    - how to treat covid
+    - treatment for covid19
+    - treatment for coronavirus
+    - how to treat corona
+
+- intent: corona_intro
+  examples: |
+    - What is corona virus
+    - what is a novel coronavirus
+    - can you tell me about corona
+    - tell me about coronavirus
+
+- intent: corona_spread
+  examples: |
+    - how does corona virus spread
+    - how does the virus spread
+    - how corona spread
+    - how corona originated
+    - origin of corona
+    - where corona first ocurred
+
+- intent: corona_food_spread
+  examples: |
+    - Does corona spread from food
+    - how will corona spread from food  
+    - does food spread corona
+    - how food will spread corona
+
+- intent: warm_weather
+  examples: |
+    - will warm weather stop the spread
+    - will it stop with warm weather
+    - will covid stop in hot weather
+    - effect of warm weather on corona
+
+- intent: high_risk
+  examples: |
+    - who are at high risk of corona
+    - who are the most vulnerable to corona
+    - who are vulnerable to covid
+    - vulnerable to covid 19 most
+    - easy target for covid
+    - whom covid target easily
+  
+- intent: corona_symptoms
+  examples: |
+    - Do i have corona virus?
+    - Do i have Covid-19?
+    - What are the symptoms of corona?
+    - symptoms of coronavirus
+
+- intent: probiotics
+  examples: |
+    - does probiotic helps
+    - probiotics cure covid
+    - is probiotic effective against covid19 corona
+    - probiotic cures covid19
+    - does anti-biotic effective using corona
+    - is anti-biotic works against covid
+    - antibiotic effective against corona
+
+- intent: helpline_numbers
+  examples: |
+    - can you give me helpline numbers?
+    - what are the helpline numbers for covid?
+    - Helpline numbers
+    - tell me emergency number
+    - can you give me emergency number
+    - how to test covid19
+    - where to test for corona
+    - where to test for covid19
+    - testing centre for covid19
+    - testing centre for corona
+
+- intent: corona_variants
+  examples: |
+    - covid variants
+    - what are the variants of coronavirus
+    - how many variants of corona present
+    - how many covid strains are presen
+    - how many covid strains are there
+
+- intent: alpha_variant
+  examples: |
+    - what is alpha variant
+    - alpha variant of covid
+    - first variant of covid
+    - what does it mean by alpha variant
+    - tell me about alpha variant
+    - tell me about alpha variant of covid
+
+- intent: beta_variant
+  examples: |
+    - what is beta variant
+    - beta strain of covid
+    - second variant of covid
+    - what does it mean by beta variant of covid
+    - tell me about beta variant of corona
+    - information regarding beta variant of covid
+    - information regarding beta variant of coronavirus
+
+- intent: gamma_variant
+  examples: |
+    - what is gamma variant
+    - tell me about gamma variant of covid
+    - tell me about gamma variant of coronavirus
+    - information regarding gamma varint
+    - information regarding gamma varint of covid
+    - tell me about gamma strain of covid
+    - information regarding gamma strain of covid
+    - information regarding gamma strain of corona
+
+- intent: delta_variant
+  examples: |
+    - what is delta variant
+    - what is delta strain of covid
+    - what is indian variant of corona
+    - what is delta variant of corona
+    - information for delta variant of corona
+    - information regarding delta strain of covid
+
+- intent: vaccines
+  examples: |
+    - what are the vaccines
+    - vaccines present in the market
+    - vaccines available
+    - what are the vaccines available in the market
+    - is there any vaccine in the market?
+
+- intent: covishield
+  examples: |
+    - what is covishield?
+    - how is covishield?
+    - details of covishield
+    - covishield
+    - data regarding covishield
+    - efficacy of covishield
+
+- intent: covaxin
+  examples: |
+    - what is covaxin?
+    - how is covaxin?
+    - details regarding covaxin
+    - information regarding covaxin
+    - data of covaxin
+    - efficacy of covaxin
+    - covaxin
+    - tell me regarding indian vaccine
+    - indian vaccine
+
+- intent: pfizer
+  examples: |
+    - what is pfizer?
+    - how is pfizer?
+    - details regarding pfizer
+    - information of pfizer
+    - data regarding pfizer
+    - efficacy of pfizer
+    - vaccine of pfizer
+    - bioNtech
+    - what is bioNtech
+    - data regarding biontech of pfizer
+    - pfizer
+    - vaccine made by united states 
+    - tell me about US vaccine
+    - vaccine made in US
+
+- intent: moderna
+  examples: |
+    - what is moderna vaccine?
+    - how is moderna?
+    - details regarding moderna
+    - information regarding moderna
+    - efficacy of moderna
+    - moderna vaccine
+    - moderna
+
+- intent: sputnik
+  examples: |
+    - what is sputnik v
+    - how is sputnik v
+    - what is sputnik
+    - sputnik v
+    - details of sputnik v
+    - data regarding sputnik
+    - russian vaccine
+    - vaccine made in russia
+    - tell me regarding russian vaccine
+
+- intent: sinovac
+  examples: |
+    - what is sinovac
+    - details regarding sinovac
+    - information regarding sinovac
+    - vaccine of sinopharm
+    - chinese vaccine
+    - information of sinovac
+    - sinopharm vaccine
+    - tell me about sinovac
+    - tell me about chinese vaccine
+
+- intent: precautions
+  examples: |
+    - what precautions should be taken
+    - how to prevent coronavirus
+    - coronavirus prevention
+    - how to stay safe from covid
+    - how to stop spread of covid
+    - precautions to remain safe from covid and coronavirus
+    - precautions to stop covid
+    - protocols to be maintained
+    - protocols to prevent corona infection
+    - protocols to prevent covid
+    - protocols to prevent infection
+
+- intent: vaccine_protocol
+  examples: |
+    - who should take vaccine
+    - who should not take vaccine
+    - safety guide for vaccine
+    - instruction for vaccine
+    - whom not to take vaccine
+    - when one should not take vaccine
+    - is vaccine safe
+
+- intent: ppe_kit
+  examples: |
+    - what is personal protective equipment
+    - what is ppe
+    - tell me about ppe kit
+    - what does it mean by PPE kit
+
+- intent: vital_parameters
+  examples: |
+    - what should be the vital parameters to be maintained
+    - vital parameters to be maintained
+    - maintain vital parameters
+    - precaution for corona patient at home
+    - precaution in case of corona patients
+    - vital precautions in case of corona patient at home
+    - what to for covid patients at home
+    - when covid patient at home
+    - home isolation
+    - how to home isolate
+    - what is home isolatin?
+    - what to do in case of home isolation?
+
+- intent: increase_oxygen_level
+  examples: |
+    - what is the normal oxygen level
+    - what is normal oxygen saturation level
+    - normal oxygen saturation
+    - how to increase oxygen 
+    - how to increase level of oxygen 
+    - what is proning 
+    - explain the methods of proning
+    - how to increase oxygen saturation by proning
+    - how to prone to increase oxygen level or saturation
+
+- intent: post_covid
+  examples: |
+    - what are the post covid symptoms
+    - how to handle post covid symptom
+    - precaution regarding post covid cases
+    - complication post covid
+    - complications occurred after covid
+    - what to do after covid
+    - symptoms after overcoming covid
+    - post covid complication cases
+    - long term health effects of covid
+    - long term side effects of covid
+    - long term complications after covid
+
+- intent: third_wave
+  examples: |
+    - is there third wave coming
+    - what to do for third wave
+    - how to handle third wave
+    - how to stop third wave
+    - how to tackle third wave
+    - precautions for third wave
+
+
+- intent: corona_states_stat
+  examples: |
+    - [India](state)
+    - what are the cases in [India](state:India)
+    - covid cases in [India](state:India)
+    - [Gujarat](state)
+    - what are the cases in [Gujarat](state:Gujarat)
+    - [Andhra Pradesh](state)
+    - what are the cases in [Andhra Pradesh](state:Andhra Pradesh)
+    - [Arunachal Pradesh](state)
+    - what are the cases in [Arunachal Pradesh](state:Arunachal Pradesh)
+    - [Assam](state)
+    - what are the cases in [Assam](state:Assam)
+    - [Bihar](state)
+    - what are the cases in [Bihar](state:Bihar)
+    - [Goa](state)
+    - what are the cases in [Goa](state:Goa)
+    - [Chhattisgarh](state)
+    - what are the cases in [Chhattisgarh](state:Chhattisgarh)
+    - [Haryana](state)
+    - what are the cases in [Haryana](state:Haryana)
+    - [Himachal Pradesh](state)
+    - what are the cases in [Himachal Pradesh](state:Himachal Pradesh)
+    - [Jharkhand](state)
+    - what are the cases in [Jharkhand](state:Jharkhand)
+    - [Karnataka](state)
+    - what are the cases in [Karnataka](state:Karnataka)
+    - [Madhya Pradesh](state)
+    - what are the cases in [Madhya Pradesh](state:Madhya Pradesh)
+    - [Kerala](state)
+    - what are the cases in [Kerala](state:Kerala)
+    - [Maharashtra](state)
+    - what are the cases in [Maharashtra](state:Maharashtra)
+    - [Manipur](state)
+    - what are the cases in [Manipur](state:Manipur)
+    - [Meghalaya](state)
+    - what are the cases in [Meghalaya](state:Meghalaya)
+    - [Mizoram](state)
+    - what are the cases in [Mizoram](state:Mizoram)
+    - [Nagaland](state)
+    - what are the cases in [Nagaland](state:Nagaland)
+    - [Odisha](state)
+    - what are the cases in [Odisha](state:Odisha)
+    - [Punjab](state)
+    - what are the cases in [Punjab](state:Punjab)
+    - [Rajasthan](state)
+    - what are the cases in [Rajasthan](state:Rajasthan)
+    - [Sikkim](state)
+    - what are the cases in [Sikkim](state:Sikkim)
+    - [Tamil Nadu](state)
+    - what are the cases in [Tamil Nadu](state:Tamil Nadu)
+    - [Telangana](state)
+    - what are the cases in [Telangana](state:Telangana)
+    - [Tripura](state)
+    - what are the cases in [Tripura](state:Tripura)
+    - [Uttar Pradesh](state)
+    - what are the cases in [Uttar Pradesh](state:Uttar Pradesh)
+    - [Uttarakhand](state)
+    - what are the cases in [Uttarakhand](state:Uttarakhand)
+    - [west bengal](state)
+    - what are the cases in [west bengal](state:west bengal)
+    - [Delhi](state)
+    - what are the cases in [Delhi](state:Delhi)

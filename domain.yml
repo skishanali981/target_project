@@ -1,0 +1,357 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - corona_intro
+  - corona_spread
+  - corona_food_spread
+  - warm_weather
+  - high_risk
+  - corona_symptoms
+  - helpline_numbers
+  - corona_variants
+  - alpha_variant
+  - beta_variant
+  - gamma_variant
+  - delta_variant
+  - vaccines
+  - covishield
+  - covaxin
+  - pfizer
+  - moderna
+  - sputnik
+  - sinovac
+  - vital_parameters
+  - increase_oxygen_level
+  - post_covid
+  - third_wave
+  - corona_states_stat
+  - precautions
+  - covid_19
+  - treatment
+  - get_tested
+  - probiotics
+  - vaccine_protocol
+  - ppe_kit
+
+actions:
+  - actions_corona_state_stat
+  - actions_name_show
+  - action_hello_world_action_test
+  - action_get_loc
+
+entities:
+  - name
+  - state
+
+slots:
+  name:
+    type: unfeaturized
+  state:
+    type: unfeaturized
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_corona_intro:
+  - text: Coronaviruses are a group of related viruses that cause diseases in mammals
+      and birds. In humans, coronaviruses cause respiratory tract infections that
+      can be mild, such as some cases of the common cold (among other possible causes,
+      predominantly rhinoviruses), and others that can be more fatal, such as SARS
+      and COVID-19.
+  utter_probiotics:
+  - text: |
+      No.there is currently no evidence to support the use of probiotics to help prevent or cure COVID-19.
+      Probiotics and anti-biotics both are useless against covid19.
+  utter_covid_19:
+  - text: |
+      COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2. WHO first learned of this new virus on 31 December 2019, 
+      following a report of a cluster of cases of 'viral pneumonia' in Wuhan, People's Republic of China.
+      Among those who develop symptoms, most (about 80%) recover from the disease without needing hospital treatment. About 15% become seriously ill and require oxygen and 5% become critically ill and need intensive care.
+      Complications leading to death may include respiratory failure, acute respiratory distress syndrome (ARDS), sepsis and septic shock, thromboembolism, and/or multiorgan failure, including injury of the heart, liver or kidneys.
+      In rare situations, children can develop a severe inflammatory syndrome a few weeks after infection.
+      For the latest information on COVID-19, check regularly on the WHO's coronavirus pages: 
+      https://www.who.int/emergencies/diseases/novel-coronavirus-2019
+
+  utter_ppe_kit:
+  - text: |
+      Personal protective equipment is protective clothing, helmets, goggles, or other garments or equipment designed to protect the wearer's body from injury or infection. 
+      The hazards addressed by protective equipment include physical, electrical, heat, chemicals, biohazards, and airborne particulate matter.
+      currently it is very effective against coronavirus spread.
+
+  utter_vaccine_protocol:
+  - text: |
+      Vaccines are usually tested in adults first, and only later assessed in children when safety has been proven in adults, 
+      because children are still developing and growing. 
+      COVID-19 has also been a more serious and dangerous disease among older people. 
+      Now that the vaccines have been determined to be safe for adults, they are being studied in children.
+      you shoud not take vaccine only if-
+      1) you are allergic to it
+      2) children must not be given vaccine currently
+      3) candidate must be 18+
+      4) person has some severe complications related to lever and kidney
+
+  utter_get_tested:
+  - text: |
+      Anyone with symptoms should be tested, wherever possible. People who do not have symptoms but have had close contact with someone who is, or may be, infected may also consider testing – contact your local health guidelines and follow their guidance.
+      While a person is waiting for test results, they should remain isolated from others. Where testing capacity is limited, tests should first be done for those at higher risk of infection, such as health workers, and those at higher risk of severe illness such as older people, especially those living in seniors' residences or long-term care facilities.
+
+  utter_treatment:
+  - text: |
+      Scientists around the world are working to find and develop treatments for COVID-19.
+      Optimal supportive care includes oxygen for severely ill patients and those who are at risk for severe disease and more advanced respiratory support such as ventilation for patients who are critically ill.
+      Dexamethasone is a corticosteroid that can help reduce the length of time on a ventilator and save lives of patients with severe and critical illness. Read our dexamethasone Q&A for more information.
+      Results from the WHO's Solidarity Trial indicated that remdesivir, hydroxychloroquine, lopinavir/ritonavir and interferon regimens appear to have little or no effect on 28-day mortality or the in-hospital course of COVID-19 among hospitalized patients.
+      Hydroxychloroquine has not been shown to offer any benefit for treatment of COVID-19. Read our hydroxychloroquine Q&A for more information.
+      WHO does not recommend self-medication with any medicines, including antibiotics, as a prevention or cure for COVID-19. WHO is coordinating efforts to develop treatments for COVID-19 and will continue to provide new information as it becomes available.
+  utter_corona_spread:
+  - text: "This virus was first detected in Wuhan City, Hubei Province, China. The\
+      \ first infections were linked to a live animal market, but the virus is now\
+      \ spreading from person-to-person. It’s important to note that person-to-person\
+      \ spread can happen on a continuum. Some viruses are highly contagious (like\
+      \ measles), while other viruses are less so. The virus that causes COVID-19\
+      \ is spreading from person-to-person and it is even Air Borne virus as well.\
+      \ Someone who is actively sick with COVID-19 can spread the illness to others.\
+      \ That is why we recommend that these patients be isolated either in the hospital\
+      \ or at home (depending on how sick they are) until they are better and no longer\
+      \ pose a risk of infecting others.\nHow long someone is actively sick can vary\
+      \ so the decision on when to release someone from isolation is made on a case-by-case\
+      \ basis in consultation with doctors, infection prevention and control experts,\
+      \ and public health officials and involves considering specifics of each situation\
+      \ including disease severity, illness signs and symptoms, and results of laboratory\
+      \ testing for that patient.\nThe virus that causes COVID-19 seems to be spreading\
+      \ easily and sustainably in the community (“community spread”) in some affected\
+      \ geographic areas. Community spread means people have been infected with the\
+      \ virus in an area, including some who are not sure how or where they became\
+      \ infected."
+  utter_corona_food_spread:
+  - text: Coronaviruses are generally thought to be spread from person-to-person through
+      respiratory droplets and it is also air borne according to WHO. Before preparing
+      or eating food it is important to always wash your hands with soap and water
+      for 20 seconds for general food safety. Throughout the day wash your hands after
+      blowing your nose, coughing or sneezing, or going to the bathroom.
+  utter_warm_weather:
+  - text: It is not yet known whether weather and temperature impact the spread of
+      COVID-19. Some other viruses, like the common cold and flu, spread more during
+      cold weather months but that does not mean it is impossible to become sick with
+      these viruses during other months.  At this time, it is not known whether the
+      spread of COVID-19 will decrease when weather becomes warmer.  There is much
+      more to learn about the transmissibility, severity, and other features associated
+      with COVID-19 and investigations are ongoing.This virus is not more resistant to heat than the usual viruses and bacteria found in food. 
+      As recommended for good hygiene practice, foods should be thoroughly cooked to at least 70°C. 
+      It is recommended to follow the WHO 5-Keys to Safer Food.
+  utter_high_risk:
+  - text: Older adults and people of any age who have serious underlying medical conditions
+      may be at higher risk for more serious complications from COVID-19. These people
+      who may be at higher risk of getting very sick from this illness, includes;
+      Older adults, People who have serious underlying medical conditions like...
+      Heart disease, Diabetes, Lung disease.
+  utter_corona_symptoms:
+  - text: "Most common symptoms include;\n1) fever\n2) dry cough\n3) tiredness\nLess\
+      \ common symptoms include\n1) aches and pain\n2) sore throat\n3) diarrhoea\n\
+      4) conjunctivitis\n5) headache\n6) loss of taste or smell\n7) a rash on skin,\
+      \ or discolouration of fingers or toes.\nSerious symptoms include\n1) difficulty\
+      \ breathing or shortness of breath\n2) chest pain or pressure and\n3) loss of\
+      \ speech or movement.\nSeek immediate medical attention if you have serious\
+      \ symptoms.\nAlways call before visiting your doctor or health facility.\nPeople\
+      \ with mild symptoms who are otherwise healthy should manage their symptoms\
+      \ at home.\nOn average it takes 5–6 days from when someone is infected with\
+      \ the virus for symptoms to show, however it can take up to 14 days."
+  utter_helpline_numbers:
+  - text: "National Helpline number Call :1921\nfor more help visit https://www.mygov.in/covid-19/ (you may refer to the site for finding nearest test centres for you as well)"
+  utter_corona_variants:
+  - text: "There are several covid variants present so far.\n 1) Alpha\n 2) Beta\n 3) Gama\n 4) Delta"
+  utter_alpha_variant:
+  - image: https://i.imgur.com/dsW0foT.jpg
+    text: "ALPHA: In December 2020, British researchers discovered that a new variant was sweeping through their country.\n\ 
+      \ When it arrived in other countries, the variant, now known as Alpha, tended to become more common in its\n\ 
+      \ new homes as well. By April 2020, it had become the dominant variant in the United States, and it has remained \
+      so ever since."
+  utter_beta_variant:
+  - image: https://i.imgur.com/ArkXOdR.jpg
+    text: |-
+      BETA: Seychelles, which has vaccinated a greater proportion of its people than any other nation, 
+      said genetic sequencing of samples shows that the so-called Beta variant, first discovered in South 
+      Africa last year, is behind a surge in cases.
+  utter_gamma_variant:
+  - image: https://i.imgur.com/HE2hjnN.jpg
+    text: |-
+      GAMMA: A mutation in the Gamma variant (P1) of coronavirus is linked to increased mortality, 
+      a Harvard T.H. Chan School of Public Health and MIT researchers said on Wednesday.
+      The mutation also carries greater transmissibility, higher infection rates, and increased 
+      pathogenicity, showed the study detailed in the journal Genetic Epidemiology.
+      The findings were based on genome-wide association studies (GWAS) methodology, which 
+      analysed whole-genome sequencing data of SARS-CoV-2 mutations and COVID-19 mortality data. 
+      In September 2020, the team looked for links between each mutation of the SARS-CoV-2 virus's 
+      single-stranded RNA and mortality in 7,548 COVID-19 patients in Brazil.
+      The researchers found one mutation—at locus 25,088bp in the virus's genome—that alters the spike protein 
+      and was linked to a significant increase in mortality in COVID-19 patients. The team flagged the variant
+      with this mutation, which was later identified as part of P1.
+  utter_delta_variant:
+  - image: https://i.imgur.com/K0AMO1C.jpg
+    text: |-
+      DELTA: After creating widespead mahyem in India for almost 2 months
+      delta variant is proven to be very dangerous. as there are also
+      vaccination drives are going on, infections are less but the 
+      India variant also called as delta variant has already killed 3.9 million people.
+  utter_vaccines:
+  - text: |-
+      There are various vaccines present at the moments they are
+      1) Covishield 
+      2) Covaxin
+      3) Pfizer BioNtech
+      4) Moderna
+      5) Sinovac
+      6) Sputnik V
+  utter_covishield:
+  - text: |-
+      Made by Astrazeneca
+      Made in India
+      Efficacy is 70-75% (after 10-12 weeks of gap)
+      price(RS): 1250 - 1500 /- per dose
+      side effetcts are - 
+      1) Pain or tenderness at the injection site
+      2) Nausea
+      3) Fever
+      4) chills
+      5) tiredness
+      6) Muscle or joint pain
+  utter_covaxin:
+  - text: |-
+      Made in India
+      Made by Bharat Biotech
+      efficacy 77.8% (after phase 3 trial)
+      price(RS): 1410 /- per dose
+      side effetcs are -
+      1) Fever
+      2) Headache
+      3) Irritability
+  utter_pfizer:
+  - text: |-
+      Made by Pfizer BioNtech
+      Made in United States
+      Efficacy is 95%
+      price($): 19.5$ per dose
+      price(RS): 1423 /-  per dose
+      side effects are -
+      1) Fever
+      2) chills
+      3) muscle pain
+      4) tiredness
+      Specifically after the second dose of pfizer people sees side effetcs
+  utter_moderna:
+  - text: |-
+      Made by Moderna
+      Made in  United States
+      Efficacy is 92%
+      Price($):23.22$ per dose
+      Price(RS): 1695 /- per dose
+      side effects are -
+      1) Fever
+      2) chiils
+      3) tiredness
+      4) headache
+  utter_sputnik:
+  - text: |-
+      Made by Gamaliya Institute
+      Made in Russia
+      Efficacy is 91.6%
+      price(RS): 948 /- per dose
+      side effetcs of sputnik v -
+      1) Fever 
+      2) chills
+      3) Fatigue
+  utter_sinovac:
+  - text: |-
+      Made in China
+      Made by Sinopharm
+      Efficacy is 56-65%
+      price(RS): 1027 /- per dose
+      side effetcs are -
+      1) Fatigue
+      2) Muscle Pain
+      3) chills
+
+  utter_vital_parameters:
+  - text: |-
+      1) The covid19 patient should stay in separate room
+      2) movement of the patiet should be limited within home
+      3) there should be at least 1 meter distance between the patient and other family members
+      4) Good ventilation within the room is a must
+      5) Oxygen support must be present in case of emergency
+      6) One should monitor the oxygen level regularly with pulse oxymeter
+      7) Dishes, cups and other things which are used by covid patient should remain neat and clean
+      8) The home must be disinfected regularly
+      9) other family members must use face mask and gloves while handling the patient
+      10) healthy diet must be maintained. specially rich with vitamin C and Zinc.
+      
+  utter_increase_oxygen_level:
+  - image: https://i.imgur.com/E3mIJMY.jpg
+    text: |-
+      NORMAL OXYGEN SATURATION LEVEL IN COVID PATIENT IS 95%. anything below that must be reported immediately.
+      to handle low oxygen saturation level one must be given proper oxygen support or ventilation.
+      if the above facility is not present the patient may try proning in order to increase oxygen level.
+      method of proning:
+      1) begin by lying in prone position for 30 mins
+      2) then switch to lying in the right side for 30 mins
+      3) then switch to sitting up position for 30 mins
+      4) switch to lying position in left side for 30 mins
+      5) return to prone position and stay for 30 mins
+  utter_post_covid:
+  - text: |-
+      after overcoming covid there are various post covid complication occurred.
+      the virus can damage lungs, heart and kidneys as well even after recovery.
+      1) damaged kidneys
+      2) heart failures 
+      3) frequent lung infections
+      4) Black fungus: Due to high usage of steroids and unclean oxygen mask and lowered immunity power body is becoming infected from various fungis and bacterias. one of those diseases which occurred after covid is the case of black fungus. 
+  utter_third_wave:
+  - text: |-
+      After the second wave which started by the end of March 2021. People are afraid of third wave of covid as well.
+      already in second wave was infecting younger adults with robust immunity power as well unlike the first wave which came in feb 2020.
+      So we must stop third wave from coming as it may bring more complications. the following steps can be taken to stop third wave of corona-
+      1) Vaccine procurement must be done in an effective way
+      2) Mass vaccination with robust speed is neccessary
+      3) people around the world needs to be more aware and take all the precautions.
+      4) heads of states must declare to prepare for the third wave.
+      5) building oxygen plants around the nation with utmost pace.
+      6) stop international travels
+      7) increase vaccine production
+  utter_precautions:
+  - text: |-
+      Precautions neccessary are -
+      1) use N95 masks while going outside
+      2) maintain social distancing
+      3) use hand sanitizers when neccessary
+      4) avoid crowd
+      5) take proper diet to boost immunity
+
+  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
